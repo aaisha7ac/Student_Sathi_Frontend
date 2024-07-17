@@ -3,7 +3,7 @@ import axios from 'axios';
 
 async function CheckUserExist(user){
   
-  let msg=await axios.post('http://localhost:5000/login',user);
+  let msg=await axios.post('https://studentsath-backend.onrender.com/login',user);
   
   if (msg.data==="ok") {   
     alert("Successfully Logged in");

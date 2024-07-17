@@ -20,7 +20,7 @@ function Login() {
     const Navigate = useNavigate();
     const handelLogin = async () => {
         try {
-            let resp = await axios.post("http://localhost:5000/login", form);
+            let resp = await axios.post("https://studentsath-backend.onrender.com/login", form);
             resp = resp.data;
             console.log(resp);
             

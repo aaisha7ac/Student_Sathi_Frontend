@@ -25,7 +25,7 @@ function Signup() {
       return;
     }
     try {
-      const resp = await axios.post("http://localhost:5000/signup", form);
+      const resp = await axios.post("https://studentsath-backend.onrender.com/signup", form);
       console.log(resp.data)
       if (resp.data) {
         alert(`user created successfully`);

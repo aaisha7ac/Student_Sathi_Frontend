@@ -46,7 +46,7 @@ const handleCourseChange=(event)=>{
 }
 
 async function getData(){
-    let response=await axios.post(`http://localhost:5000/getRole/${selectedCourse}`);
+    let response=await axios.post(`https://studentsath-backend.onrender.com/getRole/${selectedCourse}`);
     console.log(response.data);
     if(response.data.msg!="Error"){
     setPosts(response.data);

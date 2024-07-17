@@ -101,7 +101,7 @@ const handleCourseChange=(event)=>{
   
 async function getData(showUniversity){
   setLoading(true);
-  let response=await axios.post(`http://localhost:5000/getdata/${selectedCourse}`,{
+  let response=await axios.post(`https://studentsath-backend.onrender.com/getdata/${selectedCourse}`,{
     location:selectedLocation
   });   
 
